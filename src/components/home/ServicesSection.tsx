@@ -21,11 +21,17 @@ const ServicesSection = () => {
   const [image, setImage] = useState(servicesImage);
 
   useEffect(() => {
-    const load = async () => {
-      const snap = await getDoc(doc(db, "services", "service-1"));
-      if (snap.exists()) setImage(snap.data().imageUrl);
+    const loadImage = async () => {
+      try {
+        const docSnap = await getDoc(doc(db, "siteImages", "home"));
+        if (docSnap.exists() && docSnap.data().servicesImage) {
+          setImage(docSnap.data().servicesImage);
+        }
+      } catch (error) {
+        console.error("Error loading services image from Firestore:", error);
+      }
     };
-    load();
+    loadImage();
   }, []);
 
   return (
