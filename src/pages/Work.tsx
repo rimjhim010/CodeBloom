@@ -26,10 +26,10 @@ interface WorkImages {
 const works = [
   {
     id: 1,
-    title: "Serene Skincare",
-    category: "Brand Identity + Packaging",
+    title: "ambc Gems",
+    category: "Visual Identity + Brand Storytelling",
     description:
-      "Our art direction sought to capture the essence of their sophisticated dainty designs in an aesthetic way. 💍💎 Our services extend beyond the lens, offering a spectrum of digital marketing solutions 💫",
+      "For ambc Gems, we captured modern minimalism through refined art direction — highlighting their delicate designs with a global, sophisticated aesthetic that feels timeless and effortless. 💍💎",
     imageKey: "workImage1" as const,
     fallback: work1,
   },
