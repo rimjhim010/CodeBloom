@@ -185,15 +185,13 @@ const Dashboard = () => {
         <div className="space-y-4">
           <div>
             <div className="bg-muted/50 p-4 rounded-lg">
+              <p className="text-sm text-muted-foreground">
+                To add admin access, create a new user account in Firebase Authentication Console
+              </p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Admin panel URL: <code className="bg-muted px-1 py-0.5 rounded text-xs">/bloom-admin</code>
+              </p>
             </div>
-          </div>
-          <div className="text-sm text-muted-foreground">
-            <p>
-              To add admin access, create a new user account in Firebase Authentication Console
-            </p>
-            <p className="text-sm text-muted-foreground mt-2">
-              Admin panel URL: <code className="bg-muted px-1 py-0.5 rounded text-xs">/bloom-admin</code>
-            </p>
           </div>
         </div>
       </motion.div>
